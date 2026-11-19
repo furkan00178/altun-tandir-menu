@@ -1,0 +1,185 @@
+:root {
+    --green: #173d32;
+    --green-light: #285647;
+    --cream: #f5f1e7;
+    --gold: #c5a66a;
+    --text: #26352d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--cream);
+    color: var(--text);
+}
+
+header {
+    background: var(--green);
+    color: var(--cream);
+    padding: 24px 8%;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+header p {
+    color: var(--gold);
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.hero {
+    background: var(--green);
+    color: var(--cream);
+    text-align: center;
+    padding: 65px 20px;
+    border-top: 1px solid var(--gold);
+}
+
+.hero h2 {
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    color: #e1dfd2;
+    line-height: 1.7;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 30px 15px;
+}
+
+.categories a {
+    text-decoration: none;
+    color: var(--green);
+    border: 1px solid var(--green);
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+.categories a:hover {
+    background: var(--green);
+    color: white;
+}
+
+.section-title {
+    text-align: center;
+    padding: 30px 15px;
+}
+
+.section-title h2 {
+    color: var(--green);
+    font-size: 27px;
+}
+
+.section-title p {
+    color: #777;
+    margin-top: 10px;
+}
+
+footer {
+    background: var(--green);
+    color: var(--cream);
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+}
+/* Ürün kartları */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 340px));
+    justify-content: center;
+    gap: 25px;
+    padding: 15px 8% 45px;
+}
+
+.product-card {
+    background: #fffdf7;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+    border: 1px solid #e8e2d5;
+}
+
+.product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-info h3 {
+    color: var(--green);
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.product-info .description {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.product-info .price {
+    color: var(--green);
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.product-info .ingredients {
+    margin-top: 14px;
+    font-size: 13px;
+    line-height: 1.8;
+    color: #555;
+}
+
+.product-info .ingredients strong {
+    color: var(--green);
+}
+.product-info .ingredients p {
+    font-weight: 600;
+    color: #3d493f;
+    line-height: 1.9;
+}
+
+.product-info .ingredients strong {
+    font-weight: 700;
+}
+.price-list {
+    margin-top: 12px;
+}
+
+.price-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 0;
+    border-bottom: 1px solid #e8e2d5;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.price-item strong {
+    color: var(--green);
+    font-size: 16px;
+}
